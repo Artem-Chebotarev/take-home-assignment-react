@@ -35,7 +35,7 @@ export const Button = (props: ButtonProps) => {
     };
 
     return (
-        <button {...otherProps} type="button" className={classNames(cls.Button, mods, [className, cls[size]])}>
+        <button {...otherProps} className={classNames(cls.Button, mods, [className, cls[size]])}>
             {children}
         </button>
     );

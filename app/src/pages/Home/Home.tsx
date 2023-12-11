@@ -1,9 +1,9 @@
-import { Button, ButtonSize } from '../../components/Button/Button';
 import { useNavigate } from 'react-router-dom';
+import { Button, ButtonSize } from '../../components/Button/Button';
 
 import cls from './Home.module.scss';
 
-export const Home = () => {
+const Home = () => {
     const navigate = useNavigate();
 
     return (
@@ -14,3 +14,5 @@ export const Home = () => {
         </div>
     );
 };
+
+export default Home;

@@ -1,8 +1,8 @@
-import { Home } from '../pages/Home/Home';
-import { Login } from '../pages/Login/Login';
 import { RouteProps } from 'react-router-dom';
-import { Products } from '../pages/Products/Products';
-import { NotFound } from '../pages/NotFound/NotFound';
+import { HomeAsync as Home } from '../pages/Home/Home.async';
+import { LoginAsync as Login } from '../pages/Login/Login.async';
+import { ProductsAsync as Products } from '../pages/Products/Products.async';
+import { NotFoundAsync as NotFound } from '../pages/NotFound/NotFound.async';
 
 export type TAppRoutes = RouteProps & {
     authOnly: boolean;

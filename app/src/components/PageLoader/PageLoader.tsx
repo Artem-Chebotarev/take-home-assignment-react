@@ -1,4 +1,5 @@
-import SpinnerImg from '../../assets/spinner.svg';
+/// <reference types="vite-plugin-svgr/client" />
+import SpinnerImg from '../../assets/spinner.svg?react';
 
 import cls from './PageLoader.module.scss';
 
