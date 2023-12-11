@@ -1,0 +1,38 @@
+.LoginForm {
+    padding: 56px;
+    background: var(--color-white);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 466px;
+}
+
+.Logo {
+    max-width: 143px;
+}
+
+.Text {
+    font: var(--font-l);
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.InputEmail {
+    margin-top: 32px;
+}
+
+.InputPassword {
+    margin-top: 24px;
+}
+
+.Button {
+    margin-top: 24px;
+}
+
+.TextForgotPassword {
+    margin-top: 32px;
+    font-weight: 700;
+    align-self: center;
+    color: var(--color-black);
+}
