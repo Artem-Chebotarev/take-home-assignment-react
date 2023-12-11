@@ -1,7 +1,14 @@
-import './App.css';
+import { Suspense } from 'react';
+import { AppRouter } from './components/AppRouter/AppRouter';
 
 function App() {
-    return <div>Initial</div>;
+    return (
+        <Suspense fallback="">
+            <div className="content-page">
+                <AppRouter />
+            </div>
+        </Suspense>
+    );
 }
 
 export default App;
