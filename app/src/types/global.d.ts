@@ -16,4 +16,3 @@ declare module '*.svg' {
     const SVG: (props: SVGProps<SVGElement>) => ReactElement;
     export default SVG;
 }
-  
