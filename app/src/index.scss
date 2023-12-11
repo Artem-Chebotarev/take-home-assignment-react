@@ -1,9 +1,13 @@
-@import "./styles/reset";
-@import "./styles/global";
+@import './styles/reset';
+@import '../fonts/SourceSansPro/sourceSansPro.css';
+@import './styles/global';
 
 body {
+    font: var(--font-m);
 }
 
 .content-page {
     display: flex;
+    background: var(--color-white);
+    min-height: 100vh;
 }

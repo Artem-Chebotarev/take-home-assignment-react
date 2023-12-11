@@ -1,9 +1,8 @@
 .PageLoader {
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
 .LoaderWrapper {
     display: flex;
@@ -16,7 +15,7 @@
     overflow: hidden;
     padding: 20px;
 }
-  
+
 .LoaderBox {
     width: 54px;
     height: 54px;
@@ -24,15 +23,13 @@
     animation: loader 1s infinite linear;
     will-change: transform;
 }
-  
+
 @keyframes loader {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-  
+
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
-  
-  
