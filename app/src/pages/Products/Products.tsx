@@ -4,8 +4,11 @@ import { ACCESS_TOKEN, EXPIRES_AT, REFRESH_TOKEN } from '../../shared/consts/con
 import { IProductsResponse } from '../../api/productsApi/types';
 import { QUERY_PRODUCTS } from '../../api/productsApi/products';
 import { PageLoader } from '../../components/PageLoader/PageLoader';
+import { ProductList } from '../../components/ProductList/ProductList';
+import { PageError } from '../../components/PageError/PageError';
 
 import cls from './Products.module.scss';
+import { PageContainer } from '../../components/PageContainer/PageContainer';
 
 const Products = () => {
     const { data, loading, error } = useQuery<IProductsResponse>(QUERY_PRODUCTS);
@@ -15,7 +18,7 @@ const Products = () => {
     }
 
     if (error) {
-        return <div>Error has happened</div>;
+        return <PageError />;
     }
 
     const productsList = data?.products;
@@ -29,26 +32,12 @@ const Products = () => {
     };
 
     return (
-        <div className={cls.Products}>
-            <Button size={ButtonSize.L} onClick={handleOnClick}>
+        <PageContainer className={cls.Products}>
+            <Button className={cls.Button} size={ButtonSize.L} onClick={handleOnClick}>
                 Logout
             </Button>
-            {productsList?.length ? (
-                <>
-                    {productsList.map(el => (
-                        <div className={cls.ProductsListWrapper} key={el.id}>
-                            <p>{el.title}</p>
-                            <p>{el.description}</p>
-                            <p>
-                                {el.price} {el.currency}
-                            </p>
-                        </div>
-                    ))}
-                </>
-            ) : (
-                <p>There are no products</p>
-            )}
-        </div>
+            <ProductList products={productsList} />
+        </PageContainer>
     );
 };
 
