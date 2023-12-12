@@ -29,5 +29,7 @@ module.exports = {
             },
         ],
         '@typescript-eslint/prefer-nullish-coalescing': 'warn',
+        '@typescript-eslint/no-unsafe-member-access': 'warn',
+        '@typescript-eslint/no-unsafe-assignment': 'warn',
     },
 };

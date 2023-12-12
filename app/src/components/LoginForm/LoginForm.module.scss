@@ -5,7 +5,7 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    width: 466px;
+    width: 100%;
 }
 
 .Logo {
@@ -35,4 +35,9 @@
     font-weight: 700;
     align-self: center;
     color: var(--color-black);
+}
+
+.TextError {
+    margin-top: 24px;
+    color: var(--color-red);
 }
