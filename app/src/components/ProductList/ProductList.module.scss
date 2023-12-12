@@ -1,0 +1,9 @@
+.ProductsList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Text {
+    font: var(--font-l);
+}
